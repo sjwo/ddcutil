@@ -1,0 +1,260 @@
+sjw@tacocat:ddcutil$ ./autogen.sh 
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal -I config -I m4 --force -I m4 ${ACLOCAL_FLAGS}
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: copying file 'config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: running: /usr/bin/autoconf --include=config --include=m4 --force
+autoreconf: running: /usr/bin/autoheader --include=config --include=m4 --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:113: installing 'config/compile'
+configure.ac:105: installing 'config/missing'
+src/app_ddcutil/Makefile.am: installing 'config/depcomp'
+autoreconf: Leaving directory `.'
+configure: debug messages disabled
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gcc option to accept ISO C99... none needed
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: Checking configure command options... 
+configure: lib...        enabled 
+configure: install_lib_only...        disabled 
+configure: install_lib_only...        disabled 
+configure: envcmds...    enabled (provisional)   
+configure: usb...        enabled (provisional)   
+configure: drm...        enabled (provisional)   
+configure: x11...      disabled 
+configure: static_functions_visible...disabled 
+configure: asan..........disabled 
+configure: doxygen...    disabled 
+configure: Resolving options... 
+configure: targetbsd...  disabled 
+configure: envcmds...    enabled 
+configure: udev...       enabled 
+configure: usb...        enabled  
+configure: x11...        disabled 
+configure: testcases...  disabled 
+configure: callgraph...  disabled 
+configure: failsim.....  disabled 
+configure: force-suse....disabled 
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... no
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... no
+checking for clock_gettime... yes
+checking for memset... yes
+checking for nl_langinfo... yes
+checking for stpcpy... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strrchr... yes
+checking for strtol... yes
+checking for library containing dlopen... -ldl
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for dlfcn.h... (cached) yes
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking for GLIB... yes
+checking for JANSSON... yes
+checking for UDEV... yes
+checking for LIBUSB... yes
+checking for LIBDRM... yes
+configure: drm...        enabled  
+configure: x11...        disabled 
+configure: doxygen disabled, not checking for Doxygen
+configure: USE_DOXYGEN not set
+checking for install-docs... no
+configure: WARNING: doc-base not installed - continuing without doc-base support
+checking for ZLIB... yes
+checking target OS using /etc/os-release ... target is not SUSE  
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/util/Makefile
+config.status: creating src/usb_util/Makefile
+config.status: creating src/base/Makefile
+config.status: creating src/vcp/Makefile
+config.status: creating src/dynvcp/Makefile
+config.status: creating src/i2c/Makefile
+config.status: creating src/usb/Makefile
+config.status: creating src/ddc/Makefile
+config.status: creating src/test/Makefile
+config.status: creating src/cmdline/Makefile
+config.status: creating src/app_sysenv/Makefile
+config.status: creating src/app_ddcutil/Makefile
+config.status: creating src/libmain/Makefile
+config.status: creating src/sample_clients/Makefile
+config.status: creating man/Makefile
+config.status: creating data/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/doxygen/Makefile
+config.status: creating src/public/ddcutil_macros.h
+config.status: creating data/ddcutil.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+	ddcutil 2.1.0
+	version suffix:   
+	=============
+
+	libtool version  	6:0:1
+
+	prefix:                 /usr/local
+	exec_prefix:            ${prefix}
+	libexecdir:             ${exec_prefix}/libexec
+	bindir:                 ${exec_prefix}/bin
+	libdir:                 ${exec_prefix}/lib
+	datarootdir:            ${prefix}/share
+	datadir:                ${datarootdir}
+	docdir:                 ${datarootdir}/doc/${PACKAGE_TARNAME}
+	mandir:               	${datarootdir}/man
+	includedir:             ${prefix}/include
+	pkgconfigdir:           
+	required_packages:       glib-2.0 >= 2.40 jansson >= 2.0
+
+	enable_lib:             yes
+	enable_install_lib_only no
+	enable_envcmds          yes
+	enable_udev             yes
+	enable_usb:             yes
+	enable_drm:             yes
+	enable_x11:             no
+	enable_asan:            no
+	enable_static_functions_visible:  no
+
+	Developer-only options:
+	enable_targetbsd:       no
+	enable_doxygen:         no
+	enable_failsim:         no
+	include_testcases:      no
+
+	compiler:               gcc
+	CFLAGS:                 -g -O2
+	CPPFLAGS:               
+	LDFLAGS:                
+
+sjw@tacocat:ddcutil$ 

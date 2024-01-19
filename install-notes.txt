@@ -1,0 +1,25 @@
+sudo apt install libglib2.0-dev libjansson-dev libudev-dev libusb-1.0-0-dev 
+./autogen.sh
+(./configure unnecessary, already done?)
+make
+make install? how to get the i2c group
+
+
+output of ddcuitl environment:
+"""
+Configuration suggestions:
+   Issue:
+      Group i2c does not exist.
+   Suggestion:
+      Create group i2c. To create group i2c, use command:
+         sudo groupadd --system i2c
+      Assign /dev/i2c-N devices to group i2c by adding a rule to /etc/udev/rules.d
+      Add the current user to group i2c:
+         sudo usermod -G i2c -a <username>
+      After this, you will have to logout and login again.
+      The changes to the user's group list are not read until a new login.
+"""
+
+created group, don't know how to creat rule.
+
+maybe now that gorup exists i should make install again and see if the installation creates the rule
